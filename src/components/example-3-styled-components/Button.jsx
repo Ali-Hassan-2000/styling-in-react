@@ -1,6 +1,7 @@
 {/* npm i styled-components */}
 import styled from 'styled-components';
 
+{/* can be export as well */}
 const StyledButton = styled.button`
   background-color: #86ba8a;
   border-radius: 8px;

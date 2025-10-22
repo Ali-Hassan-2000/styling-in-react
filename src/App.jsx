@@ -3,6 +3,7 @@ import './App.css'
 import Button1 from './components/example-1-normal-css/Button.jsx';
 import Button2 from './components/example-2-inline-css/Button.jsx';
 import Button3 from './components/example-3-styled-components/Button.jsx';
+import Button4 from './components/example-4-css-modules/Button.jsx'
 
 function App() {
 
@@ -30,6 +31,20 @@ function App() {
       blends CSS with JavaScript, which is not preferable for those who like to keep styling 
       separate from scripting.*/}
       <div className="App"> <Button3 buttonText="Example 3" /> </div>
+
+      {/*Inline styling in React is particularly useful for dynamic styling. Since styles are 
+      applied as JavaScript objects, you can easily modify styles based on the component’s state 
+      or props. This allows for more flexible and interactive styling that changes in response 
+      to user actions or other conditions within the application. As the application grows, 
+      managing styles inline can become cumbersome and less maintainable. This approach can 
+      lead to code duplication and difficulty in tracking style-related bugs. */}
+      <div className="App"> <Button2 buttonText="Example 2" /> </div>
+
+      {/* CSS Modules automatically ensure that all class names are local to the component, 
+      significantly reducing the risk of style conflicts. This scoping makes it easier to 
+      maintain styles across large projects, as you can be confident that changes in one 
+      component’s CSS won’t inadvertently impact other components. */}
+      <div className="App"> <Button4 buttonText="Example 4" /> </div>
 
 
     </>
