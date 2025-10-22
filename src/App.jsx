@@ -2,6 +2,7 @@ import './App.css'
 
 import Button1 from './components/example-1-normal-css/Button.jsx';
 import Button2 from './components/example-2-inline-css/Button.jsx';
+import Button3 from './components/example-3-styled-components/Button.jsx';
 
 function App() {
 
@@ -19,6 +20,16 @@ function App() {
       managing styles inline can become cumbersome and less maintainable. This approach can 
       lead to code duplication and difficulty in tracking style-related bugs. */}
       <div className="App"> <Button2 buttonText="Example 2" /> </div>
+
+      {/* Using styled-components, styles are tightly coupled with components, leading to more 
+      modular and reusable code. This method promotes the creation of self-contained components 
+      where both logic and style are defined together, enhancing code clarity and ease of maintenance.
+      As far as libraries go, this one is among the most popular.
+      For developers new to this approach, there can be a learning curve in understanding how to 
+      use JavaScript for styling. This method also increases the complexity of your code, as it 
+      blends CSS with JavaScript, which is not preferable for those who like to keep styling 
+      separate from scripting.*/}
+      <div className="App"> <Button3 buttonText="Example 3" /> </div>
 
 
     </>
